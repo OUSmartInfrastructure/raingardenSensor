@@ -15,10 +15,10 @@ The sensors housings we designed and mounted are shown below. A 3D detail is als
 To get things started, you will need:
  - [Particle Electron](https://www.particle.io/products/hardware)
  - An [MPU 6050](https://www.adafruit.com/product/2652) sensor unit
- - A 10W 12V [solar panel]https://www.amazon.com/ALEKO%C2%AE-10W-10-Watt-%20Monocrystalline-Solar/dp/B00G4KHJN6
- - A solar charge [controller]https://www.amazon.com/Sunix-Controller-Intelligent-Temperature-Compensation/dp/B01J5A6X92/ref=pd_sbs_86_2?_encoding=UTF8&refRID=B8DY326YZ77B3RJT9QPY&th=1
+ - A 10W 12V [solar panel](https://www.amazon.com/ALEKO%C2%AE-10W-10-Watt-%20Monocrystalline-Solar/dp/B00G4KHJN6)
+ - A solar charge [controller](https://www.amazon.com/Sunix-Controller-Intelligent-Temperature-Compensation/dp/B01J5A6X92/ref=pd_sbs_86_2?_encoding=UTF8&refRID=B8DY326YZ77B3RJT9QPY&th=1)
  - 3D Print one of the sensor housings from:
- - A outdoor [utility box] https://www.amazon.com/Wise-%20Outdoors-5601-13-Small-%20Utility/dp/B0019JXDQE/
- - A [terminal board] (https://store.ncd.io/product/screw-terminal-breakout-board-for-particle-photon-or-particle-electron/) for the Electron to keep your connections in place
+ - A outdoor [utility box](https://www.amazon.com/Wise-%20Outdoors-5601-13-Small-%20Utility/dp/B0019JXDQE/)
+ - A [terminal board](https://store.ncd.io/product/screw-terminal-breakout-board-for-particle-photon-or-particle-electron/) for the Electron to keep your connections in place
  - A 15,000 mAh acid-lead battery
  - Various cables and connectors
