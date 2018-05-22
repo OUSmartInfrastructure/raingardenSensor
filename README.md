@@ -25,7 +25,7 @@ https://cad.onshape.com/documents/ec36e10f84544662c55e4cf2/w/c337c54d4c1919a4cff
  - A floater for the pendulum, we tested a few you can even use a table tennis ball and attach it with super glue.
  - A outdoor [utility box](https://www.amazon.com/Wise-%20Outdoors-5601-13-Small-%20Utility/dp/B0019JXDQE/)
  - A [terminal board](https://store.ncd.io/product/screw-terminal-breakout-board-for-particle-photon-or-particle-electron/) for the Electron to keep your connections in place
- - A 10,000 mAh acid-lead battery(https://www.amazon.com/12v-10Ah-SLA-Rechargeable-Battery/dp/B004WENYYE/ref=sr_1_1?rps=1&ie=UTF8&qid=1505693127&sr=8-1&keywords=12v+battery+10ah&refinements=p_85%3A2470955011)
+ - A 10,000 mAh 12V sealed [battery](https://www.amazon.com/12v-10Ah-SLA-Rechargeable-Battery/dp/B004WENYYE/ref=sr_1_1?rps=1&ie=UTF8&qid=1505693127&sr=8-1&keywords=12v+battery+10ah&refinements=p_85%3A2470955011). Do not use a USB based Li-Ion battery as the housing might get too hot during the summer.
  - Enameled [copper wire](https://www.adafruit.com/product/3522) 
  - Various cables and connectors
  - Various tools: drill, drill bits, protection gloves and goggles, etc.
