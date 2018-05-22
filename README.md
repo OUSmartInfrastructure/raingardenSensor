@@ -14,10 +14,11 @@ The sensors housings we designed and mounted are shown below. A 3D detail is als
 ## Getting started
 To get things started, you will need:
  - [Particle Electron](https://www.particle.io/products/hardware)
- - An [MPU 6050](https://www.adafruit.com/product/2652) sensor unit
+ - An [MPU 6050](https://www.sparkfun.com/products/11028) sensor board or other I2C based accelerometer
  - A 10W 12V [solar panel](https://www.amazon.com/ALEKO%C2%AE-10W-10-Watt-%20Monocrystalline-Solar/dp/B00G4KHJN6)
  - A solar charge [controller](https://www.amazon.com/Sunix-Controller-Intelligent-Temperature-Compensation/dp/B01J5A6X92/ref=pd_sbs_86_2?_encoding=UTF8&refRID=B8DY326YZ77B3RJT9QPY&th=1)
- - 3D Print one of the sensor housings from:
+ - 3D Print one of the sensor housings from Onshape: [Design 1](https://cad.onshape.com/documents/c7ef5115150ea284fa6ded5d/w/f29a5a49622384c412d514d9/e/a90ee472d2e98eb237201269), [Design 2](
+https://cad.onshape.com/documents/ec36e10f84544662c55e4cf2/w/c337c54d4c1919a4cff84898/e/298fa85778e384ae9d079753)
  - A outdoor [utility box](https://www.amazon.com/Wise-%20Outdoors-5601-13-Small-%20Utility/dp/B0019JXDQE/)
  - A [terminal board](https://store.ncd.io/product/screw-terminal-breakout-board-for-particle-photon-or-particle-electron/) for the Electron to keep your connections in place
  - A 15,000 mAh acid-lead battery
