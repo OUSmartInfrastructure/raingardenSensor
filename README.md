@@ -8,8 +8,8 @@ To make it easier to replicat our design we employed OnShape's public CAD system
 
 The sensors housings we designed and mounted are shown below. A 3D detail is also available in the main branch.
 
-![CeO Install](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/athensCeOInstall.jpg) 
-![Community Center Install](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/athensCommCenterInstall.png) 
+![CeO Install](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/athensCeOInstall.jpg) 
+![Community Center Install](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/athensCommCenterInstall.png) 
 
 ## Getting started
 To get things started, you will need:
