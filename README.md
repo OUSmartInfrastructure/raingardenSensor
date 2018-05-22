@@ -6,4 +6,7 @@ Over the past two years we have worked on developing low-cost, stormwater sensor
 
 To make it easier to replicat our design we employed OnShape's public CAD system to design the 3D printed parts necessary to house the sensor. There are two designs we have made public via OnShape. One for a sensor that can be installed on a PVC pipe and a second for a sensor that can be mounted on the exterior of a 6 inch PVC 90 degree fitting.
 
+The sensors housing and 3D details for the PVC mounted one are shown below.
+
+## Materials needed
 ![alt text](https://www.larepublica.ec/wp-content/uploads/2014/05/copy-cropped-cropped-logo_larepublica.png)
