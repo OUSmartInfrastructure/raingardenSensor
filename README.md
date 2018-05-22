@@ -8,5 +8,6 @@ To make it easier to replicat our design we employed OnShape's public CAD system
 
 The sensors housing and 3D details for the PVC mounted one are shown below.
 
+![alt text](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/branch/master/athensCeOInstall.jpg)
 ## Materials needed
 ![alt text](https://www.larepublica.ec/wp-content/uploads/2014/05/copy-cropped-cropped-logo_larepublica.png)
