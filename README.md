@@ -30,9 +30,14 @@ https://cad.onshape.com/documents/ec36e10f84544662c55e4cf2/w/c337c54d4c1919a4cff
  - Various cables and connectors
  - Various tools: drill, drill bits, protection gloves and goggles, etc.
  
- ## Assembling the sensor
+ ## Assembling the sensor and the outdoor box
  After printing the corresponding parts. Install the spacers and the pendulum along with the bushings. The challenging part is connecting the MPU6050 board using the enameled wire as it is very thin so you will need to patiently handle it with care and solder it to the board or to headers on the board. Then attach it to a four wire cable (1 to 2 meter long) that connects the MPU6050 to the terminal board the houses the Electron. The two pictures below show the enameled wire connections as well as utility box with the external and internal components.
- 
+
+![Enameled Wire Detail](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/athensCommCenterBoardDetails.jpg)
+
+![Outdoor Enclosure](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/outdoorEnclosure.jpg)
+
+![Outdoor Enclosure Detail](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/outdoorEnclosure2.jpg)
  
  
  ## Particle project
