@@ -51,10 +51,15 @@ The picture below shows the details of the I2C connections to the Electron termi
  
  To configure the software all configuration varialbes are declared in the constants.h file.
  The following constants control the sampling data:
- NUMANGLESAVERAGE            5               // Number of angle averages that will be stored every 
+ 
+ NUMANGLESAVERAGE            5               // Number of angle averages that might be reported
+ 
  HOURSVOLTAGEREPORTING       4               // Number of hours between voltage reports to serial or cloud m2x (set to 0 for no reporting)
+ 
  THRESHOLDANGLE              7.0             // Angle in degrees above which a report of an array of averages is reported
+ 
  TIMEBETWEENANGLEREADSEC     30              // Number of seconds between consecutive angle reads, if set to every 30 seconds and 12 samples 5 averages covers 30 minutes
+ 
  CONSECUTIVEANGFORAVERAGE    12              // Number of consecutive samples to store before computing one of the NUMANGLESAVERAGE averages
  
  With the configuration shown above the Electron will compute the average of 12 samples collected every 30 seconds. It will do this 5 times before deciding to report the results or not. If any of the 5 averages correspond to angles of the pendulum higher than 7 degrees all 5 averages are reported otherwise none are reported. Additionally, every 4 hours the Electron can report its voltage of operation when a battery connected to its internal port (the Li-Ion port) is used. Again, we don't use a Li-Ion battery as the enclosure might get too hot in direct sunlight.
