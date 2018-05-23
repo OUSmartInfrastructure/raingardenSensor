@@ -31,11 +31,15 @@ https://cad.onshape.com/documents/ec36e10f84544662c55e4cf2/w/c337c54d4c1919a4cff
  - Various tools: drill, drill bits, protection gloves and goggles, etc.
  
  ## Assembling the sensor and the outdoor box
- After printing the corresponding parts. Install the spacers and the pendulum along with the bushings. The challenging part is connecting the MPU6050 board using the enameled wire as it is very thin so you will need to patiently handle it with care and solder it to the board or to headers on the board. Then attach it to a four wire cable (1 to 2 meter long) that connects the MPU6050 to the terminal board the houses the Electron. The two pictures below show the enameled wire connections as well as utility box with the external and internal components.
+ After printing the corresponding parts. Install the spacers and the pendulum along with the bushings. The challenging part is connecting the MPU6050 board using the enameled wire as it is very thin so you will need to patiently handle it with care and solder it to the board or to headers on the board. Then attach it to a four wire cable (1 to 2 meter long) that connects the MPU6050 to the terminal board the houses the Electron. The pictures below show the enameled wire connections as well as utility box with the external and internal components.
+ 
+Notice how the enameled wires are connected to the headers on the sensor and then threaded through the 3D printed mount.
 
 ![Enameled Wire Detail](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/athensCommCenterBoardDetails.jpg)
 
 ![Outdoor Enclosure](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/outdoorEnclosure.jpg)
+
+The picture below shows the details of the I2C connections to the Electron terminal board.
 
 ![Outdoor Enclosure Detail](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/outdoorEnclosure2.jpg)
  
@@ -44,3 +48,17 @@ https://cad.onshape.com/documents/ec36e10f84544662c55e4cf2/w/c337c54d4c1919a4cff
  The easiest way to create your own version of the sensor is to create your own Particle account and use the Web IDE to compile your code. There are two files mpu6050v21.ino and constants.h in the repository. Add both of them to a new Particle application, compile on the web and deploy them to your Electron.
  
  The MPU6050 board should be powered by the Electron's 3.3V pin and connected to the I2C terminals of the Electron. You will require the enamel copper wire to connect the sensor board terminals inside the housing. Other wires might be too heavy to allow free movement of the pendulum.
+ 
+ To configure the software all configuration varialbes are declared in the constants.h file.
+ The following constants control the sampling data:
+ NUMANGLESAVERAGE            5               // Number of angle averages that will be stored every 
+ HOURSVOLTAGEREPORTING       4               // Number of hours between voltage reports to serial or cloud m2x (set to 0 for no reporting)
+ THRESHOLDANGLE              7.0             // Angle in degrees above which a report of an array of averages is reported
+ TIMEBETWEENANGLEREADSEC     30              // Number of seconds between consecutive angle reads, if set to every 30 seconds and 12 samples 5 averages covers 30 minutes
+ CONSECUTIVEANGFORAVERAGE    12              // Number of consecutive samples to store before computing one of the NUMANGLESAVERAGE averages
+ 
+ With the configuration shown above the Electron will compute the average of 12 samples collected every 30 seconds. It will do this 5 times before deciding to report the results or not. If any of the 5 averages correspond to angles of the pendulum higher than 7 degrees all 5 averages are reported otherwise none are reported. Additionally, every 4 hours the Electron can report its voltage of operation when a battery connected to its internal port (the Li-Ion port) is used. Again, we don't use a Li-Ion battery as the enclosure might get too hot in direct sunlight.
+ 
+ Additionally the constants allow you to configure three different levels of debugging (with growing level of detail) by setting to TRUE the constants DBGLVL1, DBGLVL2 or DBGLVL3. The OUTSERIAL and OUTCLOUD boolean constants enable reporting via the serial port and/or to the cloud respectively.
+ 
+ When reporting to the cloud the Electron uses two webhooks named l01 and m01 (or l02 and m02 for a second Electron). These webhooks are configured to report the five average angles (in two separate messages) to ATT's M2X platform.
