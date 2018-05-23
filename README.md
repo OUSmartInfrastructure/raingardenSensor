@@ -62,3 +62,9 @@ The picture below shows the details of the I2C connections to the Electron termi
  Additionally the constants allow you to configure three different levels of debugging (with growing level of detail) by setting to TRUE the constants DBGLVL1, DBGLVL2 or DBGLVL3. The OUTSERIAL and OUTCLOUD boolean constants enable reporting via the serial port and/or to the cloud respectively.
  
  When reporting to the cloud the Electron uses two webhooks named l01 and m01 (or l02 and m02 for a second Electron). These webhooks are configured to report the five average angles (in two separate messages) to ATT's M2X platform.
+ 
+ To understand how to create the webhooks the two picture below show the "Integrations" configuration on Particle's Console.
+
+![Webhook l01 part 1](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/webhookl01example01.jpg)
+
+![Webhook l01 part 2](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/webhookl01example01Continuation.jpg)
