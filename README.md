@@ -65,6 +65,6 @@ The picture below shows the details of the I2C connections to the Electron termi
  
  To understand how to create the webhooks the two picture below show the "Integrations" configuration on Particle's Console.
 
-![Webhook l01 part 1](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/webhookl01example01.jpg)
+![Webhook l01 part 1](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/webhookl01example01.png)
 
-![Webhook l01 part 2](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/webhookl01example01Continuation.jpg)
+![Webhook l01 part 2](https://raw.githubusercontent.com/OUSmartInfrastructure/raingardenSensor/master/images/webhookl01example01Continuation.png)
