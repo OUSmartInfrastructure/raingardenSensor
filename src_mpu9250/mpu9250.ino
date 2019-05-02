@@ -1,6 +1,6 @@
 #include <math.h>
-#include "src/constants.h"
-#include "src/quaternionFilters.h"
+#include "constants.h"
+#include "quaternionFilters.h"
 #include "src/MPU9250.h"
 
 // Author: Julio Arauz
