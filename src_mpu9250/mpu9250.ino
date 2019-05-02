@@ -1,7 +1,7 @@
 #include <math.h>
 #include "constants.h"
 #include "quaternionFilters.h"
-#include "src/MPU9250.h"
+#include "MPU9250.h"
 
 // Author: Julio Arauz
 // License: MIT license
